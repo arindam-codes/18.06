@@ -1,0 +1,309 @@
+# MIT 18.06 — Lecture 1 Practice Problems
+## Geometry of Linear Equations
+
+These problems are designed so you **master the ideas** from the lecture — not just mechanically solve equations.
+
+**Lecture 1 focuses on:**
+- Row Picture
+- Column Picture
+- Matrix Picture
+- Matrix Multiplication
+- Linear Combinations
+- Linear Independence vs Dependence
+- Geometry Intuition
+
+The goal is to train yourself to **see linear algebra from multiple perspectives**.
+
+---
+
+## Phase 1 — Deep Intuition (Very Important)
+
+### Problem 1 — Row Picture Visualization
+
+Solve graphically:
+
+```
+x  +  y = 4
+2x -  y = 2
+```
+
+**Tasks:**
+1. Draw both lines.
+2. Find the intersection point.
+3. Explain geometrically **why** the solution exists.
+4. What would happen if the lines were parallel?
+
+---
+
+### Problem 2 — No Solution
+
+Solve:
+
+```
+ x +  y = 1
+2x + 2y = 5
+```
+
+**Questions:**
+- Draw both lines.
+- Why is there no solution?
+- What does this mean geometrically?
+
+---
+
+### Problem 3 — Infinite Solutions
+
+Solve:
+
+```
+ x +  y = 2
+2x + 2y = 4
+```
+
+**Questions:**
+- Why are there infinitely many solutions?
+- What does the graph look like?
+- Why is the second equation redundant?
+
+---
+
+## Phase 2 — Column Picture Mastery
+
+### Problem 4 — Linear Combination Thinking
+
+Write this system as a **column equation**:
+
+```
+3x + 2y = 7
+ x -  y = 1
+```
+
+Which combination of the column vectors gives the target `[7, 1]`?
+
+```
+    [3]       [2]   [7]
+x * [1]  + y* [-1] = [1]
+```
+
+---
+
+### Problem 5 — Build the Target Vector
+
+Find `x, y`:
+
+```
+    [1]     [3]   [11]
+x * [2] + y*[1] = [ 7]
+```
+
+Solve it:
+1. Algebraically
+2. Geometrically
+3. Using matrix form
+
+---
+
+### Problem 6 — Can You Reach Every Vector?
+
+Given columns:
+
+```
+[1]   [2]
+[2]   [4]
+```
+
+**Questions:**
+- Can their combinations fill the whole plane?
+- Are they linearly independent?
+- Can they create `[1, 0]`? Why or why not?
+
+> This problem is extremely important for understanding **singular matrices**.
+
+---
+
+## Phase 3 — Matrix Picture
+
+### Problem 7 — Convert Between All 3 Pictures
+
+Take:
+
+```
+2x + 3y = 8
+ x -  y = 1
+```
+
+Convert it into:
+1. Row picture
+2. Column picture
+3. Matrix picture (`Ax = b`)
+
+Then solve the system.
+
+> This is one of the **best** exercises for mastering Lecture 1.
+
+---
+
+### Problem 8 — Build Your Own System
+
+Create a system whose solution is `x = 2, y = -1`.
+
+Then:
+- Draw it
+- Convert to matrix form
+- Convert to column form
+
+*This forces understanding instead of memorization.*
+
+---
+
+## Phase 4 — Matrix Multiplication Intuition
+
+### Problem 9 — Column Combination Method
+
+Compute:
+
+```
+[2  1] [5]
+[3  4] [2]
+```
+
+Using:
+1. **Linear combination of columns**
+2. **Row dot products**
+
+Both methods must produce the same answer.
+
+---
+
+### Problem 10 — Meaning of Matrix Multiplication
+
+Let:
+
+```
+A = [1  0]
+    [0  2]
+```
+
+What happens to the vector `[x, y]` after multiplication by `A`?
+
+**Answer:**
+- What geometric transformation occurs?
+- What happens to the plane?
+
+> This begins the intuition behind **linear transformations**.
+
+---
+
+## Phase 5 — Real Mastery Problems
+
+### Problem 11 — Detect Dependence Without Calculation
+
+Are these vectors dependent?
+
+```
+[1]   [2]
+[2]   [4]
+```
+
+What about:
+
+```
+[1]   [2]
+[2]   [5]
+```
+
+Explain **without** determinant formulas.
+
+---
+
+### Problem 12 — Think Like Strang
+
+Suppose `Ax = b` has:
+- no solution
+- one solution
+- infinitely many solutions
+
+For **each case** describe:
+1. Row picture
+2. Column picture
+3. Matrix meaning
+
+> This single problem develops REAL understanding.
+
+---
+
+## Final Boss Problems
+
+### Problem 13 — Can These Vectors Span the Plane?
+
+Can these vectors generate the whole plane?
+
+```
+[1]   [2]
+[1]   [2]
+```
+
+What about:
+
+```
+[ 1]   [ 1]
+[ 1]   [-1]
+```
+
+Explain geometrically.
+
+---
+
+### Problem 14 — Pure Understanding
+
+Why does `Ax = b` mean BOTH:
+- intersection of equations (row picture)
+- combination of vectors (column picture)
+
+> This is the **core philosophical idea** of Lecture 1.
+
+---
+
+## The Most Important Habit
+
+For **every** system, always think in all 3 pictures:
+
+| Picture | Meaning |
+|---|---|
+| **Row Picture** | Intersection of equations (lines/planes) |
+| **Column Picture** | Linear combination of column vectors |
+| **Matrix Picture** | Compact abstract form: `Ax = b` |
+
+If you train this habit now, later topics become **much** easier:
+
+- Eigenvectors & Eigenvalues
+- Vector Spaces & Null Space
+- SVD (Singular Value Decomposition)
+- Machine Learning
+- Quantum Mechanics
+- Optimization
+- Computer Graphics
+
+---
+
+## One Extremely Powerful Exercise
+
+For any random 2×2 system `Ax = b`, ask yourself:
+
+1. What do the **rows** mean?
+2. What do the **columns** mean?
+3. What does **multiplication** mean?
+4. Can the columns **span** the plane?
+5. Are the columns **independent**?
+6. Is the matrix **singular**?
+7. Is the solution **unique**?
+
+That is how you move from:
+
+> *"learning linear algebra"*
+
+to:
+
+> **"thinking in linear algebra"**
+
+Questions are generated by ChatGPT to Master the whole MIT 18.06 Lecture 
